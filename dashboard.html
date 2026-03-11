@@ -115,6 +115,15 @@ background: linear-gradient(135deg,#0077B6,#00B4D8);
             opacity: 1;
             pointer-events: auto;
         }
+        .btn-accent{
+    background: var(--color-accent);
+    color: white;
+    transition: .3s;
+}
+
+.btn-accent:hover{
+    background: var(--color-accent-light);
+}
 
         /* RTL Support */
         html[dir="rtl"] .sidebar-link { flex-direction: row-reverse; }
@@ -528,8 +537,9 @@ background: linear-gradient(135deg,#0077B6,#00B4D8);
                                     </div>
                                 </div>
                                 <div class="flex gap-2">
-                                    <button class="flex-1 px-4 py-2 bg-accent text-white rounded-xl hover:bg-accent-light transition text-sm font-bold">Manage</button>
-                                    <button class="px-4 py-2 border border-border rounded-xl hover:bg-hover transition text-sm">+ New</button>
+<button class="flex-1 px-4 py-2 btn-accent rounded-xl text-sm font-bold">
+    Manage
+</button>                                    <button class="px-4 py-2 border border-border rounded-xl hover:bg-hover transition text-sm">+ New</button>
                                 </div>
                             </div>
 
@@ -580,8 +590,9 @@ background: linear-gradient(135deg,#0077B6,#00B4D8);
                                 </div>
                                 <div class="flex gap-2">
                                     <button class="flex-1 px-4 py-2 border border-border rounded-xl hover:bg-hover transition text-sm">View</button>
-                                    <button class="flex-1 px-4 py-2 bg-accent text-white rounded-xl hover:bg-accent-light transition text-sm font-bold">Write</button>
-                                </div>
+<button class="flex-1 px-4 py-2 btn-accent rounded-xl text-sm font-bold">
+    Write
+</button>                                </div>
                             </div>
                         </div>
                     </div>
