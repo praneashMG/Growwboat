@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/growwpark_logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>404 - Page Not Found | GrowwWave</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* --- CSS Variables matched to your Index --- */
+        :root, html[data-theme='light'] {
+            --color-background: #FFFFFF;
+            --color-primary-text: #000000;
+            --color-secondary-text: #4A4A4A;
+            --color-accent: #0077B6; 
+            --color-accent-light: #FF6B35; 
+            --color-border: #E5E7EB; 
+            --color-hover: #F0F9FF; 
+        }
+        html[data-theme='dark'] {
+            --color-background: #0F172A; 
+            --color-primary-text: #FFFFFF;
+            --color-secondary-text: #BDBDBD;
+            --color-accent: #00B4D8; 
+            --color-accent-light: #FF6B35; 
+            --color-border: #1E293B; 
+            --color-hover: #1E293B;
+        }
+        
+        body {
+            background-color: var(--color-background);
+            color: var(--color-primary-text);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            overflow: hidden;
+        }
+
+        .text-accent { color: var(--color-accent); }
+        .text-accent-light { color: var(--color-accent-light); }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation { animation: float 4s ease-in-out infinite; }
+
+        .theme-btn {
+            background-color: var(--color-accent);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .theme-btn:hover {
+            background-color: var(--color-accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 119, 182, 0.3);
+        }
+
+        /* Waves Animation */
+        .ocean-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: url('https://raw.githubusercontent.com/yusufshakeel/svg-icon-animation-tutorial/master/images/wave.svg');
+            background-size: 1000px 100px;
+            opacity: 0.1;
+        }
+        html[data-theme='dark'] .ocean-waves { opacity: 0.05; filter: invert(1); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Direction specific fixes */
+        html[dir="rtl"] .float-animation { transform: scaleX(-1); }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen items-center justify-center">
+
+    <header class="absolute top-0 w-full py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-serif font-extrabold tracking-tight">    
+                <span class="text-accent">Groww</span><span class="text-accent-light">Wave</span>
+            </a>
+            
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <button id="lang-icon" class="p-2 rounded-full border border-border hover:bg-hover transition-colors text-primary-text" title="Toggle Direction">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.8 2.5 12.2 0 15m0-15c-2.5 2.8-2.5 12.2 0 15M3 12h18" /></svg>
+                </button>
+
+                <button id="theme-toggle" class="p-2 rounded-full border border-border hover:bg-hover transition-colors">
+                    <svg class="w-6 h-6 light-icon text-primary-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <svg class="w-6 h-6 dark-icon hidden text-primary-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 text-center px-4">
+        <div class="reveal">
+            <div class="relative inline-block mb-8">
+                <h1 class="text-[10rem] md:text-[15rem] font-black leading-none opacity-10 select-none">404</h1>
+                <div class="absolute inset-0 flex items-center justify-center float-animation">
+                    <i class="fa-solid fa-anchor text-7xl md:text-9xl text-accent-light"></i>
+                </div>
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Lost at Sea?</h2>
+            <p class="text-lg md:text-xl text-secondary-text mb-10 max-w-lg mx-auto">
+                The page you're looking for has drifted beyond the horizon. Let's get you back to the shore.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="theme-btn px-10 py-4 rounded-xl font-bold shadow-lg">
+                    Return Home
+                </a>
+                <a href="contact.html" class="border border-border px-10 py-4 rounded-xl font-bold hover:bg-hover transition-colors">
+                    Contact Support
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="ocean-waves"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const html = document.documentElement;
+
+            // --- 1. Theme Logic ---
+            const themeToggle = document.getElementById('theme-toggle');
+            const applyTheme = (theme) => {
+                html.setAttribute('data-theme', theme);
+                document.querySelectorAll('.light-icon').forEach(i => i.classList.toggle('hidden', theme === 'dark'));
+                document.querySelectorAll('.dark-icon').forEach(i => i.classList.toggle('hidden', theme === 'light'));
+            };
+
+            themeToggle.addEventListener('click', () => {
+                const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                localStorage.setItem('theme', next);
+                applyTheme(next);
+            });
+            applyTheme(localStorage.getItem('theme') || 'light');
+
+            // --- 2. RTL / LTR Logic ---
+            const langIcon = document.getElementById('lang-icon');
+            const applyDirection = (dir) => {
+                html.setAttribute('dir', dir);
+                localStorage.setItem('language', dir === 'rtl' ? 'ar' : 'en');
+            };
+
+            langIcon.addEventListener('click', () => {
+                const currentDir = html.getAttribute('dir') || 'ltr';
+                const nextDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+                applyDirection(nextDir);
+            });
+            
+            // Sync with index.html saved language
+            const savedLang = localStorage.getItem('language') === 'ar' ? 'rtl' : 'ltr';
+            applyDirection(savedLang);
+
+            // --- 3. Reveal Animation ---
+            setTimeout(() => {
+                document.querySelector('.reveal').classList.add('active');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
