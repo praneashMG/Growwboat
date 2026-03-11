@@ -559,9 +559,11 @@
                         <h2 class="text-2xl font-serif font-bold">Ready to leave?</h2>
                         <p class="text-secondary-text mt-3">Your session will end and you'll be signed out.</p>
                         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                            <button class="px-8 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition text-sm font-bold">
-                                Yes, Sign Out
-                            </button>
+                           <button 
+    onclick="window.location.href='auth.html'" 
+    class="px-8 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition text-sm font-bold">
+    Yes, Sign Out
+</button>
                             <button onclick="activateSection('profile')" class="px-8 py-3 border border-border rounded-xl hover:bg-hover transition text-sm font-bold">
                                 Cancel
                             </button>
