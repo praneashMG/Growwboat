@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -205,7 +205,7 @@
     <header class="sticky top-0 z-50 transition-colors duration-300 shadow-xl border-b border-border bg-background" id="main-header">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between h-[70px]">
             <a href="index.html" class="text-3xl font-serif font-extrabold tracking-tight">    
-                <span class="text-accent">Boatify</span><span class="text-accent-light">Wave</span>
+                <span class="text-accent">Boatify</span><span class="text-[#48CAE4]">Wave</span>
             </a>
 
             <div class="hidden xl:flex items-center space-x-6">
@@ -486,54 +486,90 @@
             </div>
         </section>
 
-        <!-- 5. EXPERIENCE GALLERY -->
-        <section id="gallery" class="py-24 bg-hover overflow-hidden">
-            <div class="container mx-auto px-4">
-                <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-                    <h2 class="text-accent font-bold uppercase tracking-[0.2em] text-sm mb-4">The Experience</h2>
-                    <h3 class="text-4xl md:text-5xl font-serif font-bold">Snapshots of Paradise</h3>
-                    <div class="w-20 h-1 bg-accent-light mx-auto mt-6 rounded-full"></div>
-                </div>
+      <!-- 5. EXPERIENCE GALLERY -->
+<section id="gallery" class="py-24 bg-hover overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2 class="text-accent font-bold uppercase tracking-[0.2em] text-sm mb-4">The Experience</h2>
+            <h3 class="text-4xl md:text-5xl font-serif font-bold">Snapshots of Paradise</h3>
+            <div class="w-20 h-1 bg-accent-light mx-auto mt-6 rounded-full"></div>
+        </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
-                    <div class="relative group overflow-hidden rounded-3xl lg:row-span-2 shadow-lg">
-                        <img src="/assets/b4.jpg" 
-                             alt="Luxury Deck" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#FF6B35]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
-                            <span class="text-white font-bold tracking-widest uppercase text-xs mb-2">Sunset Views</span>
-                            <h4 class="text-white text-2xl font-serif">Golden Hour Cruises</h4>
-                        </div>
-                    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
 
-                    <div class="relative group overflow-hidden rounded-3xl shadow-lg h-[300px]">
-                        <img src="/assets/b1.jpg" 
-                             alt="Speedboat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-[#FF6B35]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-accent-light transform scale-50 group-hover:scale-100 transition-transform duration-500">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                            </div>
-                        </div>
-                    </div>
+            <!-- CARD 1 -->
+            <div class="relative group overflow-hidden rounded-3xl lg:row-span-2 shadow-lg">
+                <img src="/assets/b4.jpg" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
 
-                    <div class="relative group overflow-hidden rounded-3xl shadow-lg h-[300px]">
-                        <img src="/assets/b2.webp" 
-                             alt="Ocean Breeze" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-[#FF6B35]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center text-white">
-                             <span class="font-bold tracking-widest uppercase text-sm border-b-2 border-white pb-1">View Details</span>
-                        </div>
-                    </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent 
+                            opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-8">
 
-                    <div class="relative group overflow-hidden rounded-3xl lg:col-span-2 shadow-lg h-[350px]">
-                        <img src="/assets/b5.jpg" 
-                             alt="Private Island" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#0077B6]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-12">
-                            <h4 class="text-white text-3xl font-serif mb-2">Hidden Lagoons</h4>
-                            <p class="text-white/80 max-w-xs">Discover secluded spots only accessible by private charter.</p>
-                        </div>
-                    </div>
+                    <h4 class="text-white text-2xl font-serif mb-2">Golden Hour Cruises</h4>
+                    <p class="text-white/80 text-sm mb-4">Experience breathtaking sunsets over calm ocean waters.</p>
+
+                    <a href="#" class="inline-block text-sm font-bold text-accent-light border-b border-accent-light hover:text-white transition">
+                        View →
+                    </a>
                 </div>
             </div>
-        </section>
+
+            <!-- CARD 2 -->
+            <div class="relative group overflow-hidden rounded-3xl shadow-lg h-[300px]">
+                <img src="/assets/b1.jpg" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 
+                            transition duration-500 flex flex-col justify-center items-center text-center p-6">
+
+                    <h4 class="text-white text-xl font-serif mb-2">Speed Adventures</h4>
+                    <p class="text-white/80 text-sm mb-4">Feel the thrill with high-speed ocean rides.</p>
+
+                    <a href="#" class="text-sm font-bold text-accent-light border-b border-accent-light hover:text-white transition">
+                        View →
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="relative group overflow-hidden rounded-3xl shadow-lg h-[300px]">
+                <img src="/assets/b2.webp" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 
+                            transition duration-500 flex flex-col justify-center items-center text-center p-6">
+
+                    <h4 class="text-white text-xl font-serif mb-2">Ocean Breeze</h4>
+                    <p class="text-white/80 text-sm mb-4">Relax with refreshing winds and scenic views.</p>
+
+                    <a href="#" class="text-sm font-bold text-accent-light border-b border-accent-light hover:text-white transition">
+                        View →
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="relative group overflow-hidden rounded-3xl lg:col-span-2 shadow-lg h-[350px]">
+                <img src="/assets/b5.jpg" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent 
+                            opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center p-12">
+
+                    <h4 class="text-white text-3xl font-serif mb-3">Hidden Lagoons</h4>
+                    <p class="text-white/80 mb-4 max-w-sm">
+                        Discover secluded spots only accessible by private charter.
+                    </p>
+
+                    <a href="#" class="text-sm font-bold text-accent-light border-b border-accent-light hover:text-white transition w-fit">
+                        View →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- 6. TESTIMONIALS -->
 <section class="py-24 bg-background relative z-10">            <div class="container mx-auto px-4">
@@ -605,7 +641,7 @@
         <div id="drawer-content" class="absolute top-0 left-0 right-0 bg-background rounded-b-2xl shadow-2xl p-6 xl:hidden max-h-[85vh] overflow-y-auto transform translate-y-[-100%] transition-transform duration-300 ease-out">
             <div class="flex justify-between items-center pb-4 border-b border-border">
                 <a href="index.html" class="text-2xl font-serif font-extrabold tracking-wide">
-                    <span class="text-accent">Boatify</span><span class="text-accent-light">Wave</span>
+                    <span class="text-accent">Boatify</span><span class="text-[#48CAE4]">Wave</span>
                 </a>
                 <button id="mobile-menu-close" class="text-primary-text hover:text-accent p-1.5 rounded-full transition duration-200">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -680,7 +716,7 @@ Sign Up
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-gray-800">
                 <div class="lg:col-span-2">
-                    <h1 class="text-3xl font-serif font-black text-accent">Boatify<span class="text-accent-light">Wave</span></h1>
+                    <h1 class="text-3xl font-serif font-black text-accent">Boatify<span class="text-[#48CAE4]">Wave</span></h1>
                     <p class="text-lg leading-relaxed max-w-sm !text-gray-400">Premium yacht charters and professional boat rentals. Creating unforgettable moments on the open sea since 2008.</p>
                     <div class="flex space-x-6 mt-10">
                         <a href="#" class="text-white hover:text-accent-light transition text-xl">
@@ -721,7 +757,7 @@ Sign Up
                     </div>
                 </div>
             </div>
-            <div class="py-10 text-center text-gray-500 text-sm">© 2026 OceanWave Rentals. All rights reserved.</div>
+            <div class="py-10 text-center text-gray-500 text-sm">Â© 2026 OceanWave Rentals. All rights reserved.</div>
         </div>
     </footer>
 
@@ -801,14 +837,14 @@ setupAccordion('mobile-homes-toggle', 'mobile-homes-menu', 'homes-icon');
 setupAccordion('mobile-dashboard-toggle', 'mobile-dashboard-menu', 'dashboard-icon');
 
 
-// ✅ Desktop RTL toggle
+// âœ… Desktop RTL toggle
 document.getElementById('lang-icon')?.addEventListener('click', () => {
     const current = localStorage.getItem('language') === 'ar' ? 'en' : 'ar';
     localStorage.setItem('language', current);
     document.documentElement.setAttribute('dir', current === 'ar' ? 'rtl' : 'ltr');
 });
 
-// ✅ Mobile RTL toggle
+// âœ… Mobile RTL toggle
 document.getElementById('mobile-lang-icon-drawer')?.addEventListener('click', () => {
     const current = localStorage.getItem('language') === 'ar' ? 'en' : 'ar';
     localStorage.setItem('language', current);
@@ -824,3 +860,5 @@ document.getElementById('mobile-lang-icon-drawer')?.addEventListener('click', ()
     </script>
 </body>
 </html>
+
+
