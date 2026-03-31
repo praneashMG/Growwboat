@@ -57,13 +57,8 @@
             background: linear-gradient(135deg, #0077B6 0%, #FF6B35 100%);
         }
 
-        .logo-text {
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-            font-weight: 600;
-        }
-
         h1, h2, h3, h4, h5, h6 { font-weight: 600; }
-        p, label, span { font-weight: 400; }
+        p, label { font-weight: 400; }
 
         /* Floating Controls */
         .controls {
@@ -78,6 +73,10 @@
         html[dir="rtl"] .controls {
             right: auto;
             left: 1rem;
+        }
+
+        .text-accent {
+            color: #0077B6;
         }
 
         .btn-control {
@@ -119,8 +118,8 @@
                     class="absolute inset-0 w-full h-full object-cover opacity-50">
                 <div class="relative z-10 p-8 text-white flex flex-col justify-between h-full">
                     <div>
-                        <a href="index.html" class="text-3xl logo-text mb-6 inline-block">
-                            <span class="text-[#0077B6]">Boatify</span><span class="text-[#48CAE4]">Wave</span>
+                        <a href="index.html" class="text-3xl font-serif font-extrabold tracking-tight mb-6 inline-block">
+                            <span class="text-accent">Boatify</span><span class="text-[#48CAE4]">Wave</span>
                         </a>
                         <h2 class="text-3xl font-serif font-bold leading-tight mb-3">Sail Beyond <span
                                 class="text-[#FF6B35]">the Horizon</span></h2>
@@ -138,8 +137,8 @@
 
             <div class="w-full md:w-7/12 flex items-center justify-center p-5 lg:p-6">
                 <div class="w-full max-w-sm">
-                    <a href="index.html" class="md:hidden text-3xl logo-text mb-6 text-center block">
-                        <span class="text-[#0077B6]">Boatify</span><span class="text-[#48CAE4]">Wave</span>
+                    <a href="index.html" class="md:hidden text-3xl font-serif font-extrabold tracking-tight mb-6 text-center block">
+                        <span class="text-accent">Boatify</span><span class="text-[#48CAE4]">Wave</span>
                     </a>
 
                     <div class="mb-6 text-center flex flex-col items-center">
