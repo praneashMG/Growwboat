@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Boatify | CONTACT </title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css">
     <style>
         /* --- CSS Variables for Ocean Style Palette --- */
         :root, html[data-theme='light'] {
@@ -42,9 +42,6 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, h5, h6 { font-weight: 600; }
-        p, label, span { font-weight: 400; }
-        
         /* Utility Class Aliases */
         .text-primary-text { color: var(--color-primary-text); }
         .text-secondary-text { color: var(--color-secondary-text); }
@@ -181,6 +178,9 @@
         .hero-overlay {
             background: linear-gradient(to bottom, rgba(0,119,182,0.6), rgba(0,0,0,0.8));
         }
+        .bg-accent {
+  background-color: var(--color-accent) !important;
+}
 
         @media (max-width: 1024px) {
             .dropdown-menu { position: static; display: none; opacity: 1; visibility: visible; transform: none; box-shadow: none; }
@@ -289,111 +289,117 @@
             </div>
         </section>
 
-     <!-- SECTION 2: REDESIGNED CONTACT HUB -->
-        <section class="py-24 bg-background">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-stretch">
-                    
-                    <!-- Left: Contact Information -->
-                    <div class="lg:w-5/12 reveal flex flex-col justify-center space-y-10">
-                        <div>
-                            <h2 class="text-accent-light font-black uppercase tracking-[0.3em] text-xs mb-4">Concierge Services</h2>
-                            <h3 class="text-4xl md:text-5xl font-serif font-bold text-primary-text leading-tight">Weâ€™re Here to Help You Chart the <span class="text-accent italic">Perfect</span> Course</h3>
-                        </div>
+    <!-- ✅ NEW RESPONSIVE CONTACT SECTION -->
+<section class="py-16 md:py-24 bg-background">
+  <div class="container mx-auto px-4">
 
-                        <div class="grid grid-cols-1 gap-6">
-                            <!-- Detail Item -->
-                            <div class="flex items-start gap-5 p-6 rounded-3xl bg-hover border border-border group hover:border-accent transition-all duration-300">
-                                <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-primary-text">Flagship Office</h5>
-                                    <p class="text-sm text-secondary-text mt-1">123 Marina Bay, Waterfront District, Miami, FL 33131</p>
-                                </div>
-                            </div>
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-                            <!-- Detail Item -->
-                            <div class="flex items-start gap-5 p-6 rounded-3xl bg-hover border border-border group hover:border-accent-light transition-all duration-300">
-                                <div class="w-12 h-12 rounded-2xl bg-accent-light/10 flex items-center justify-center text-accent-light group-hover:bg-accent-light group-hover:text-white transition-all">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-primary-text">Priority Line</h5>
-                                    <p class="text-sm text-secondary-text mt-1">+1 (800) 555-WAVE (Available 24/7)</p>
-                                </div>
-                            </div>
+      <!-- LEFT SIDE -->
+      <div class="space-y-8">
 
-                            <!-- Detail Item -->
-                            <div class="flex items-start gap-5 p-6 rounded-3xl bg-hover border border-border group hover:border-accent transition-all duration-300">
-                                <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-primary-text">Digital Inquiries</h5>
-                                    <p class="text-sm text-secondary-text mt-1">concierge@growwwave.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div>
+          <h2 class="text-accent-light font-bold uppercase tracking-widest text-xs mb-3">
+            Concierge Services
+          </h2>
 
-                    <!-- Right: The Modern Form -->
-                    <div class="lg:w-7/12 reveal relative">
-                        <!-- Floating Glass Background -->
-                        <div class="absolute -inset-4 bg-accent/5 rounded-[4rem] blur-2xl -z-10 opacity-50 dark:opacity-20"></div>
-                        
-                        <div class="bg-card-bg p-8 md:p-12 rounded-[3.5rem] border border-border shadow-2xl h-full">
-                            <h4 class="text-2xl font-serif font-bold mb-8 text-primary-text flex items-center gap-3">
-                                <span class="w-8 h-px bg-accent-light"></span> 
-                                Send a Message
-                            </h4>
-                            
-                            <form action="#" class="space-y-6">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div class="space-y-2">
-                                        <label class="text-[10px] uppercase font-black tracking-widest text-secondary-text ml-2">Your Full Name</label>
-                                        <input type="text" placeholder="Enter name" 
-                                            class="w-full p-4 rounded-2xl bg-background border border-border focus:border-accent focus:ring-2 focus:ring-accent/10 text-primary-text outline-none transition-all placeholder:opacity-30">
-                                    </div>
-                                    <div class="space-y-2">
-                                        <label class="text-[10px] uppercase font-black tracking-widest text-secondary-text ml-2">Email Address</label>
-                                        <input type="email" placeholder="email@example.com" 
-                                            class="w-full p-4 rounded-2xl bg-background border border-border focus:border-accent focus:ring-2 focus:ring-accent/10 text-primary-text outline-none transition-all placeholder:opacity-30">
-                                    </div>
-                                </div>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight">
+            We’re Here to Help You Chart the
+            <span class="text-accent italic">Perfect</span> Course
+          </h3>
+        </div>
 
-                                <div class="space-y-2">
-                                    <label class="text-[10px] uppercase font-black tracking-widest text-secondary-text ml-2">Interest Type</label>
-                                    <select class="w-full p-4 rounded-2xl bg-background border border-border focus:border-accent focus:ring-2 focus:ring-accent/10 text-primary-text outline-none transition-all appearance-none cursor-pointer">
-                                        <option>Yacht Charter Inquiry</option>
-                                        <option>Boat Rental Booking</option>
-                                        <option>Special Event Request</option>
-                                        <option>Corporate Partnership</option>
-                                    </select>
-                                </div>
+        <!-- Contact Cards -->
+        <div class="space-y-4">
 
-                                <div class="space-y-2">
-                                    <label class="text-[10px] uppercase font-black tracking-widest text-secondary-text ml-2">Your Vision</label>
-                                    <textarea rows="5" placeholder="Tell us about the dream voyage you wish to plan..." 
-                                        class="w-full p-4 rounded-2xl bg-background border border-border focus:border-accent focus:ring-2 focus:ring-accent/10 text-primary-text outline-none transition-all placeholder:opacity-30 resize-none"></textarea>
-                                </div>
-
-                                <button type="submit" class="w-full bg-accent-light text-white py-5 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                                    <span>Send Message</span>
-                                    <i class="fas fa-paper-plane text-sm"></i>
-                                </button>
-                                
-                                <p class="text-center text-[10px] text-secondary-text uppercase tracking-widest opacity-60">
-                                    Encrypted & Private Connection
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
+          <!-- Item -->
+          <div class="flex gap-4 p-4 md:p-5 rounded-2xl bg-hover border border-border hover:shadow-md transition">
+            <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <i class="fas fa-map-marker-alt text-sm"></i>
             </div>
-        </section>
+            <div>
+              <h5 class="font-semibold text-sm">Flagship Office</h5>
+              <p class="text-xs text-secondary-text mt-1">
+                123 Marina Bay, Waterfront District
+              </p>
+            </div>
+          </div>
 
+          <!-- Item -->
+          <div class="flex gap-4 p-4 md:p-5 rounded-2xl bg-hover border border-border hover:shadow-md transition">
+            <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-accent-light/10 text-accent-light">
+              <i class="fas fa-phone-alt text-sm"></i>
+            </div>
+            <div>
+              <h5 class="font-semibold text-sm">Priority Line</h5>
+              <p class="text-xs text-secondary-text mt-1">
+                +1 (800) 555-WAVE
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="flex gap-4 p-4 md:p-5 rounded-2xl bg-hover border border-border hover:shadow-md transition">
+            <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <i class="fas fa-envelope text-sm"></i>
+            </div>
+            <div>
+              <h5 class="font-semibold text-sm">Email</h5>
+              <p class="text-xs text-secondary-text mt-1">
+                concierge@growwwave.com
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE (FORM) -->
+      <div class="bg-background border border-border rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl">
+
+        <h4 class="text-xl md:text-2xl font-serif font-bold mb-6 flex items-center gap-3">
+          <span class="w-6 h-[2px] bg-accent-light"></span>
+          Send a Message
+        </h4>
+
+        <form class="space-y-5">
+
+          <!-- Name + Email -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Full Name"
+              class="w-full p-3 rounded-xl border border-border bg-background focus:ring-2 focus:ring-accent/20 outline-none text-sm">
+
+            <input type="email" placeholder="Email Address"
+              class="w-full p-3 rounded-xl border border-border bg-background focus:ring-2 focus:ring-accent/20 outline-none text-sm">
+          </div>
+
+          <!-- Select -->
+          <select class="w-full p-3 rounded-xl border border-border bg-background text-sm">
+            <option>Yacht Charter Inquiry</option>
+            <option>Boat Rental Booking</option>
+            <option>Event Request</option>
+          </select>
+
+          <!-- Textarea -->
+          <textarea rows="4" placeholder="Tell us about your plan..."
+            class="w-full p-3 rounded-xl border border-border bg-background text-sm resize-none"></textarea>
+
+          <!-- Button -->
+    <button
+  class="w-full py-3 bg-[#0077B6] text-white rounded-xl font-bold text-sm shadow-md 
+  hover:bg-[#0096c7] hover:scale-[1.02] transition-all duration-300">
+  Send Message
+</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
         <!-- 3. MAP SECTION -->
         <section class="h-[500px] w-full bg-gray-200">
             <iframe 
